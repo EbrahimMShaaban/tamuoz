@@ -3,7 +3,6 @@ import 'package:tamuoz/screens/regestration/login.dart';
 import 'package:tamuoz/screens/regestration/sign_up.dart';
 
 import '../../constant/style.dart';
-import '../../widgets/butonlogin.dart';
 
 class Registrationview extends StatefulWidget {
   const Registrationview({Key? key}) : super(key: key);
@@ -15,8 +14,9 @@ class Registrationview extends StatefulWidget {
 class _RegistrationviewState extends State<Registrationview> {
   @override
   int index=0;
+  @override
   Widget build(BuildContext context) {
-    bool onclick = true;
+    // bool onclick = true;
 
     return Scaffold(
       backgroundColor: brown,
@@ -120,5 +120,4 @@ class _RegistrationviewState extends State<Registrationview> {
     );
   }
 }
-// RegistrationButton("إنشاء حساب", () => setState(() => (clicked == false) ? clicked = !clicked : null), clicked),
-// RegistrationButton("تسجيل دخول", () => setState(() => (!clicked == false) ? clicked = !clicked : null), !clicked),
+//

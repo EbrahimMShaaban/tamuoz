@@ -13,8 +13,8 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     final TextEditingController emailControl = TextEditingController();
     final TextEditingController passwordControl = TextEditingController();
-    String email = '';
-    String password = '';
+    // String email = '';
+    // String password = '';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -29,7 +29,7 @@ class Login extends StatelessWidget {
             validate: (value) {},
             controller: passwordControl,
             hint: 'كلمة المرور',
-            visibility: Icon(Icons.visibility),
+            visibility: const Icon(Icons.visibility),
             type: TextInputType.emailAddress),
         TextButton(
             onPressed: () {},
@@ -44,7 +44,7 @@ class Login extends StatelessWidget {
             backcolor: lightgold,
             ontab: () {
               Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => NavigationScreen()));
+                  MaterialPageRoute(builder: (context) => const NavigationScreen()));
             },
             width: sizeFromWidth(context, 1.13)),
         Padding(

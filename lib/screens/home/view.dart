@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tamuoz/constant/style.dart';
 import 'package:tamuoz/widgets/butonlogin.dart';
 
-import 'day_erd_item.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({Key? key}) : super(key: key);
@@ -26,17 +25,17 @@ class Homeview extends StatelessWidget {
         leading: Row(
           children: [
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Icon(Icons.notifications, color: gold),
             ),
             Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Icon(Icons.search, color: gold),
             ),
           ],
         ),
       ),
-      endDrawer: Drawer(),
+      endDrawer: const Drawer(),
       body: Column(
         //alignment: Alignment.bottomCenter,
         children: [
@@ -47,7 +46,7 @@ class Homeview extends StatelessWidget {
                 //height: MediaQuery.of(context).size.height / 4,
                 decoration: BoxDecoration(
                     color: brown,
-                    borderRadius: BorderRadius.only(
+                    borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(20),
                         bottomRight: Radius.circular(20))),
                 child: Column(
@@ -127,7 +126,7 @@ class Homeview extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Image(
+                    const Image(
                       image: AssetImage('assets/images/books.png'),
                     )
                   ],

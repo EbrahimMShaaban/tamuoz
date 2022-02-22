@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tamuoz/constant/style.dart';
@@ -30,7 +29,7 @@ class _SplashscreenState extends State<Splashscreen> {
       backgroundColor: brown,
       body: Column(
         children: [
-          Expanded(
+          const Expanded(
               child: Image(image: AssetImage('assets/images/logo_png.png'))),
           SvgPicture.asset('assets/images/tamayyuz.svg'),
           Text(

@@ -14,8 +14,8 @@ class Signup extends StatelessWidget {
     final TextEditingController emailControl = TextEditingController();
     final TextEditingController passwordControl = TextEditingController();
     final TextEditingController password2Control = TextEditingController();
-    String email = '';
-    String password = '';
+    // String email = '';
+    // String password = '';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
@@ -30,7 +30,7 @@ class Signup extends StatelessWidget {
             validate: (value) {},
             controller: passwordControl,
             hint: 'كلمة المرور',
-            visibility: Icon(Icons.visibility),
+            visibility: const Icon(Icons.visibility),
             type: TextInputType.emailAddress),
         defualtTextFormField(
             validate: (value) {},
@@ -45,7 +45,7 @@ class Signup extends StatelessWidget {
             backcolor: lightgold,
             ontab: () {
               Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => NavigationScreen()));
+                  MaterialPageRoute(builder: (context) => const NavigationScreen()));
             },
             width: sizeFromWidth(context, 1.13)),
 
